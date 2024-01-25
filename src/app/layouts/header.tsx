@@ -40,7 +40,6 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkTheme }) => {
     { icon: <LinkedInIcon />, text: 'LinkedIn', href: 'https://www.linkedin.com/in/jaren-nawy-867695229/' },
     { icon: <GitHubIcon />, text: 'GitHub', href: 'https://github.com/jdcnawy' },
     { icon: <EmailIcon />, text: 'Email', href: 'mailto:jarennawy9@gmail.com' },
-    // Add other menu items as needed
   ];
 
   return (
@@ -60,7 +59,6 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkTheme }) => {
               </IconButton>
             </Hidden>
             <Hidden smDown>
-              {/* Render individual icons for larger screens */}
               <IconButton color="inherit" onClick={toggleDarkTheme}>
                 {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
               </IconButton>
@@ -73,15 +71,12 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkTheme }) => {
               <IconButton color="inherit" href="mailto:jarennawy9@gmail.com">
                 <EmailIcon />
               </IconButton>
-              <IconButton color="inherit" href="link-to-download-resume" target="_blank">
-                <GetAppIcon />
-              </IconButton>
+
             </Hidden>
           </Stack>
         </Toolbar>
       </AppBar>
 
-      {/* Drawer for small screens */}
       <Drawer anchor="right" open={drawerOpen} onClose={handleDrawerClose}>
         <List>
           {menuItems.map((item, index) => (

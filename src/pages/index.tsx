@@ -6,7 +6,7 @@ import { lightTheme, darkTheme } from '../app/styles/themes';
 import { CssBaseline } from '@mui/material';
 
 const IndexPage: React.FC = () => {
-  const [darkMode, setDarkMode] = React.useState(false);
+  const [darkMode, setDarkMode] = React.useState(true);
 
   const toggleDarkMode = () => {
     setDarkMode((prev) => !prev);

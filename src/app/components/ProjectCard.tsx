@@ -39,7 +39,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
         <Button onClick={handleClickOpen} color="primary">
           View Stack
         </Button>
-
+        {liveDemoLink && (
+          <Button variant="outlined" color="primary" href={liveDemoLink} target="_blank" rel="noopener noreferrer">
+            Live Demo
+          </Button>
+        )}
         {/* Dialog for displaying technologies */}
         <Dialog open={open} onClose={handleClose}>
           <DialogTitle>{`${title} Technologies`}</DialogTitle>
@@ -57,13 +61,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
             <Button onClick={handleClose} color="primary">
               Close
             </Button>
-            {liveDemoLink && (
-          <Button variant="outlined" color="primary" href={liveDemoLink} target="_blank" rel="noopener noreferrer">
-            Live Demo
-          </Button>
-        )}
+            
           </DialogActions>
         </Dialog>
+        
       </CardContent>
     </Card>
   );
