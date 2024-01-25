@@ -79,9 +79,6 @@ const Skills: React.FC = () => {
                 <Tooltip title="Django" arrow>
                   <img src="/technologies/django.svg" alt="Django" style={{ width: iconSize, height: iconSize }} />
                 </Tooltip>
-                <Tooltip title="React" arrow>
-                  <img src="/technologies/react.svg" alt="React" style={{ width: iconSize, height: iconSize }} />
-                </Tooltip>
                 <Tooltip title="Next.js" arrow>
                   <img src="/technologies/nextjs-2.svg" alt="Next.js" style={{ width: iconSize, height: iconSize }} />
                 </Tooltip>
